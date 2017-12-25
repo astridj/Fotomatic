@@ -170,17 +170,18 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
   #sign-up-section {
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 28rem;
   }
 
   #sign-up-cta {
-    position: static;
     width: auto;
     height: auto;
     background-color: transparent;
     border: none;
+    margin: 0 auto;
   }
 
   #sign-up-cta .content {
@@ -228,7 +229,7 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  width: 40%;
+  width: 50%;
 }
 
 .feature .image-container {
@@ -273,11 +274,21 @@ header .mobile {
   #features-section {
     flex-flow: column;
     padding: 0;
+    margin: auto;
   }
 
   .feature {
-    margin: 0;
+    margin: 0 auto;
     padding: 1.25rem 1rem 0 1rem;
+    width: 95.5%;
+  }
+
+  .center .image-container {
+    margin-bottom: 1.3rem;
+  }
+
+  .feature h3 {
+    margin-bottom: 1.8rem;
   }
 }
 
@@ -366,16 +377,16 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
